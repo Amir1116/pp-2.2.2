@@ -7,6 +7,20 @@
 </head>
 <body>
     <h1>Cars</h1>
-    <h1 th:text="${count}"></h1>
+    <table border="1" style="width:25%">
+        <caption>Cars</caption>
+        <tr>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Engine</th>
+        </tr>
+    <th:block th:each="car : ${car}">
+        <tr>
+            <td th:text="${car.getModel()}"></td>
+            <td th:text="${car.getColor()}"></td>
+            <td th:text="${car.getEngine()}"></td>
+        </tr>
+    </th:block>
+<!--    <h1 th:text="${count}"></h1>-->
 </body>
 </html>

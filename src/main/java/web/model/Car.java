@@ -40,14 +40,6 @@ public class Car {
         return engine;
     }
 
-    public List<Car> getCarList(){
-        List<Car> cars = new ArrayList<>();
-        for(int i = 1; i <= 5; i++){
-            cars.add(new Car(("model"+i),("color"+i),("engine")+i));
-        }
-        return cars;
-    }
-
     @Override
     public String toString() {
         return "Car{" +

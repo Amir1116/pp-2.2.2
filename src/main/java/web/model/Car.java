@@ -8,7 +8,8 @@ public class Car {
     private String color;
     private String engine;
 
-    public Car(){}
+    public Car() {
+    }
 
     public Car(String model, String color, String engine) {
         this.model = model;
